@@ -1,0 +1,2703 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Nunito';
+    
+    
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 999;
+    font-family: 'Ubantu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{ 
+    padding:15px 0;
+    background-color: crimson;
+}
+.navbar.sticky .logo a span{
+    color:#fff;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 0px;
+    margin: auto;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: rgb(1, 0, 0);
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar.sticky .logo a{
+    color: rgb(254, 254, 254);
+}
+.navbar .logo a span{
+    color:crimson;
+}
+.navbar .logo a::after{
+    color: rgb(41, 171, 41);
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span::after{
+    color:rgb(5, 5, 19);
+}
+.navbar.sticky .menu-btn {
+    color: #fff;
+}
+.menu-btn{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+.navbar .menu li a {
+    background-image: linear-gradient(
+      to right,
+      #c90721,
+      #25024b 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    font-size:18px; 
+    font-weight: 500;
+    margin-left: 25px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar.sticky .menu li a {
+    background-image: linear-gradient(
+      to right,
+      #fff,
+      #fff 50%,
+      #fff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    font-size:18px; 
+    font-weight: 500;
+    margin-left: 25px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar .menu li a:before{
+    content: '';
+    background: #790303;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  .navbar.sticky .menu li a:before{
+    content: '';
+    background: #fff;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar .menu li a:hover {
+   background-position: 0;
+  }
+  
+  .navbar .menu li a:hover::before{
+    width: 100%;
+  }
+  
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* home section styling */
+
+.main1 .main1-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}  
+
+
+.main1 .main1-content .left{
+    width: 45%;
+}
+
+.main1 .main1-content .right{
+    width: 55%;
+}
+.main1 .main1-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.main1 .main1-content .right .text span{
+    color: crimson;
+}
+
+
+
+
+.main1 .main1-content .right .text-1{
+    font-size: 25px;
+    text-align: center;
+}
+
+.main1 .main1-content .right .text-4{
+    text-align: center;
+
+  
+}
+.main1 .main1-content .right .text-3{
+    font-size: 15px;
+    text-align: center;
+    
+}
+.main1 .main1-content .left img{
+    margin-top: 40px;
+    width: 20%;
+    height: 350px;
+    width: 250px;
+   
+}
+
+.main1 .main1-content .right .text-3{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    
+    
+}
+
+.main1 .main1-content .right .text-1{
+    font-size: 40px;
+    padding-top: 55px;
+}
+
+
+
+
+:root {
+    --red: crimson;
+    --bgColor: grey;
+  }
+  
+.iconsocial {
+    position:absolute;
+    
+    left:69%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    padding-top:20px;
+    display:flex;
+  }
+  
+  .iconsocial li {
+    list-style: none;
+  }
+  
+  .iconsocial li a {
+    position: relative;
+    width:50px;
+    height:50px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #fff, #fff);
+    transition: .5s;
+  }
+  
+  .iconsocial li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+  }
+  
+  .iconsocial li a .fab {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #fff);
+    border-radius: 50%;
+    line-height: calc(40px - 1px);
+    font-size:20px;
+    color: #262626;
+    transition: .5s;
+  }
+  
+  .iconsocial li:nth-child(1) a .fab {
+    color: #3b5998;
+  }
+  
+  .iconsocial li:nth-child(2) a .fab {
+    color: #00aced;
+  }
+  
+  .iconsocial li:nth-child(3) a .fab {
+    color: #111;
+  }
+  
+  .iconsocial li:nth-child(4) a .fab {
+    color: #007bb6;
+  }
+  
+  .iconsocial li:nth-child(5) a .fab {
+    color: #e4405f;
+  }
+.hello{
+    height:350px;
+    width:250px;
+    box-shadow:
+    -50px -50px 0 -40px var(--red),
+    50px 50px 0 -40px var(--red);
+}
+.home .social .btn1{
+    max-width: 50px; margin-top: 30px;
+}
+.home .img:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 200%;
+    top: -100px;
+    left: -100px;
+    background: #4c84ff;
+    transform: rotate(-30deg);
+}
+.home .img img {
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+section{
+    padding:50px 0;
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubantu', sans-serif;
+}
+.projects .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubantu', sans-serif;
+}
+
+.Skills .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubantu', sans-serif;
+}
+
+.blogs .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubantu', sans-serif;
+}
+.contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubantu', sans-serif;
+}
+.subtext{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title3{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubantu', sans-serif;
+}
+
+.about .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    width:180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+
+}
+.about .title::after{
+    content:" ";
+    position: absolute;
+    bottom: -12px;
+    font-size: 20px;
+    color:crimson;
+    left:50%;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+
+}
+.social{
+    text-decoration: none;
+}
+
+/* About Section */
+
+.about .title::after{
+    content: "";
+}
+.about .about-content .column{
+    width: calc(50% - 30px);
+}
+.about .about-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .left p{
+    text-align: justify;
+}
+    
+
+.about .about-content .right .bars{
+    margin-bottom: 15px;
+}
+.about .about-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.about .about-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.about .about-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.about-content .right .css::before{
+    width: 95%;
+}
+.about-content .right .js::before{
+    width: 80%;
+}
+.about-content .right .php::before{
+    width: 75%;
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* timeline section */
+
+.timeline{
+    width:75%;
+    margin-left: 13%;
+    background-color:#fff;
+    color:rgb(7, 7, 7);
+    padding:30px 20px;
+    box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+  }
+  .timeline ul{
+    text-align: left;
+    list-style-type:none;
+    border-left:2px solid #000;
+    font-family: 'Ubantu', sans-serif;
+    padding:1px 5px;
+  }
+  .timeline ul li{
+    padding:20px 20px;
+    position:relative;
+    cursor:pointer;
+    transition:.5s;
+  }
+  .timeline ul li span{
+    display:inline-block;
+    background-color:#fff;
+    border-radius:25px;
+    padding:2px 5px;
+    font-size:15px;
+    text-align:center;
+  }
+  .timeline ul li .content h3{
+    color:crimson;
+    font-size:17px;
+    padding-top:5px;
+  }
+  .timeline ul li .content p{
+    padding:5px 0px 15px 0px;
+    font-size:15px;
+  }
+  .timeline ul li:before{
+    position:absolute;
+    content:'';
+    width:10px;
+    height:10px;
+    background-color:rgb(120, 56, 56)   ;
+    border-radius:50%;
+    left:-11px;
+    top:28px;
+    transition:.5s;
+  }
+  .timeline ul li:hover{
+    background-color:#fafafa;
+  }
+  .timeline ul li:hover:before{
+    background-color:rgb(255, 0, 0);
+    box-shadow:0px 0px 10px 2px rgb(255, 0, 0);
+  }
+  @media (max-width:300px){
+    .timeline{
+      width:100%;
+      padding:30px 5px 30px 10px;
+    }
+    .timeline ul li .content h3{
+      color:#34ace0;
+      font-size:15px;
+    }
+  
+  }
+
+/* Skills Section */
+.Skills .card{
+    margin-top: 50px;
+    margin-bottom: 0;
+    max-width: 1200px;
+    background-color:#fff;
+    color:rgb(7, 7, 7);
+    box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+}
+.card h1{
+    padding: 30px;
+    font-family: sans-serif;
+}
+.Skills .title4{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    font-family: 'Ubantu', sans-serif;
+}
+
+.html{
+    max-width: 50px;
+    margin-left: 40px;
+}
+
+hr{
+    margin-top: 10%;
+    box-shadow: 6px 0px 2px #888;
+}
+
+/* Projects Section */
+
+.projects .carousel .card{
+    background: whitesmoke;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    font-family: 'Ubantu', sans-serif;
+    transition: all 0.3s ease;
+    height: 330px;
+    
+
+
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin:10px 0 7px 0;
+}
+
+.projects .carousel .card:hover{
+    border: 1px solid crimson;
+   
+    box-shadow:0px 0px 100px rgba(8, 8, 8, 0.5);
+}
+.projects .carousel .card:hover .box{
+    transform: scale(1.0s);
+   
+
+}
+.projects .carousel .card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+   
+    
+   
+
+}
+.projects .carousel .card:hover img{
+    border-color: #fff;
+    transition: all 0.3s ease;
+
+}
+.projects .text{
+    font-size: medium;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+
+}
+
+
+/* blog section */
+#blogs{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding: 40px;
+   
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+
+}
+.blog-box{
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+    border:1px solid rgb(6, 6, 6); 
+    margin: 20px;
+}
+
+.blog-box:hover{
+        box-shadow:0px 0px 40px rgba(8, 8, 8, 0.5);
+    }
+    .blog-box1:hover{
+        box-shadow:0px 0px 40px rgba(8, 8, 8, 0.5);
+    }
+
+
+.blogs .border-container:hover{
+    box-shadow:0px 0px 30px rgba(8, 8, 8, 0.5);
+}
+.blog-img{
+    width: 100%;
+    height: 100%;
+    height: auto;
+}
+
+.blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-text{
+    padding: 30px;
+    display: flex;
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+
+.blog-text span{
+    font-family: 'Nunito';
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color:#272727;
+}
+
+.blog-text .blog-title:hover{
+    color: crimson;
+    transition: all ease 0.3s;
+}
+
+.blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.button1 {
+    background-color: cr; /* Green */
+    border: none;
+    color: white;
+    height: 40px;
+    width: 130px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  
+.button4 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #0000EE;
+  }
+  
+  .button4:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+
+@media(max-width:1250px){
+    .blog.box{
+        width: 300px;
+    }
+}
+@media(max-width:1100px){
+    .blog-box{
+        width: 70%;
+    }
+}
+@media(max-width:550px){
+    .blog-box{
+        margin: 20px 10px;
+        width: 100%;
+    }
+    #blog{
+       padding: 20px; 
+    }
+}
+/* contact Section*/
+
+.contact{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contact .contact-content .column{
+    width:calc(50% - 30px);
+    width: 100%;
+    margin-bottom: 35px;
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons{
+    margin:10px 0;
+}
+.contact .contact-content .row{
+    display:flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 20px;
+     
+
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-right: 2px;
+}
+
+.contact .right form .field input{
+    width: calc(50% - 30px);
+}
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .right form .field input,
+.contact .right form .field-textarea textarea{
+    height: 100%;
+    width: calc(100%);
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    border-color:crimson;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.contact .right form .field input:hover,
+.contact .right form .field-textarea textarea:hover{
+    box-shadow:0px 0px 10px rgb(239, 138, 158);
+
+}
+
+.contact .right form .field-textarea{
+    height: 80px;
+    width: 100%;
+    
+}
+
+.contact .right form .field-textarea textarea{
+    padding-top: 10px;
+    resize: none;
+    
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+    margin-top: 40px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor:pointer;
+    transition: all 0.3 ease;
+}
+.contact .right form .button button:hover{
+    color: crimson;
+    background:none;
+}
+
+footer span a{
+    color: crimson;
+}
+footer .box{
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(255, 254, 254);
+    padding: 50px;
+    margin-bottom: 0%;
+    box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+}
+
+.bn632-hover {
+    width: 140px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    margin-left: 0px;
+    height: 45px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn28 {
+    background-image: linear-gradient(
+      to right,
+      #eb3941,
+      #f15e64,
+      #064ef5,
+      #e2373f
+    );
+    box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+  }
+
+@media(max-width:1104px){
+    .home max-width{
+         margin-left: 0px;}
+     .max-width{
+            padding:0 50px;
+        }
+    
+    
+}
+
+@media(max-width:1300px){
+    .max-width{
+        padding:0 50px;
+    }
+}
+@media(max-width:991px){
+    .max-width{
+        padding:0 50px;
+    }
+
+}
+@media(max-width:947px){
+    
+    
+    .menu-btn{
+            display: block;
+            z-index: 999;
+        }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width:100%;
+        background:#fff;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top:80px;
+        transition: all 0.3s ease;
+
+
+
+    }
+    .navbar.sticky .menu{
+        position: fixed;
+        height: 100vh;
+        width:100%;
+        background: crimson;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top:80px;
+
+
+
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+
+    }
+    .menu-btn i.active:before{
+        content:"\f00d";
+    }
+    .navbar .menu.active{
+        left: 0;
+
+    }
+    
+}
+
+
+@media(max-width:690px){
+    .max-width{
+        padding:0 23px;
+    }
+}
+
+@media(max-width:350px){
+     .iconsocial{
+        padding-top: 19px;
+        left: 50%;
+     }
+}
+
+@media(max-width:350px){
+    .iconsocial li a {
+        position: relative;
+        width:40px;
+        height:40px;
+        font-size: 20px;
+        
+      }
+}
+
+@media(max-width:350px){
+    
+        .iconsocial li a .fab {
+            
+            line-height: calc(30px - 1px);
+
+          }
+      
+}
+
+
+
+
+
+@media(max-width:350px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+
+@media(max-width:350px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+@media(max-width:350px){
+    .hr{
+        margin-top: 0%;
+    }
+}
+@media(max-width:350px){
+    .about .title{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        font-family: 'Ubantu', sans-serif;
+    }
+    .about{
+        padding-top: 40px;
+    }
+    .title3{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10%;
+        padding-bottom: 20px;
+       
+    }
+    .timeline{
+        width:90%;
+        margin-left: 5%;
+        background-color:#fff;
+        color:rgb(7, 7, 7);
+        padding:30px 20px;
+        box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+      }
+      .timeline ul li span{
+        font-size:13px;
+        text-align:center;
+      }
+      .timeline ul li .content h3{
+        color:crimson;
+        font-size:13px;
+        padding-top:5px;
+      }
+      .timeline ul li .content p{
+        padding:5px 0px 15px 0px;
+        font-size:13px;
+      }
+      .year{
+        font-size: 13px;
+      }
+    
+    .Skills .card{
+      margin-top: 10px;
+      padding: 0;
+      font-size: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-bottom: 0;
+      background-color:#fff;
+      color:rgb(7, 7, 7);
+      box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+  }
+  .social2{
+    margin-left: 0;
+  }
+  .html{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+   .Skills .title{
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+ .projects .title{
+    font-size: 30px;
+    margin-bottom: 0;
+ }
+
+
+ .blogs .title{
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 0;
+ }
+ #blogs{
+    padding: 0;
+ }
+ .blog-text p{
+    display: none;
+ }
+.blog-text a{
+    font-size: 15px;
+}
+.blog-text span{
+    font-size: 13px;
+}
+.contact .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+    font-size: 15px;
+}
+.contact .contact-content .info .head{
+    
+    font-size: 15px;
+}
+.contact .contact-content .row i{
+    font-size: 15px;
+    color: crimson;
+}
+.contact .contact-content .right .text{
+    font-size: 15px;
+}
+.contact .right form .field input{
+    width: 100%;
+}
+.contact .right form .fields{
+    flex-direction: column;
+}
+.contact .right form .name,
+.contact .right form .email{
+    margin: 0;
+}
+.right form .error-box{
+   width: 150px;
+}
+
+footer .box{
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(255, 254, 254);
+    padding: 20px;
+    margin-bottom: 0%;
+    box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+}
+
+
+}
+
+
+
+
+
+@media(max-width:390px){
+     .iconsocial{
+        padding-top: 19px;
+        left: 50%;
+     }
+}
+
+
+@media(max-width:390px){
+    .home .home-content .text-3{
+        font-size: 10px;
+       
+    }
+}
+
+
+
+@media(max-width:390px){
+    .iconsocial li a {
+        position: relative;
+        width:40px;
+        height:40px;
+        font-size: 20px;
+        
+      }
+}
+
+@media(max-width:390px){
+    
+        .iconsocial li a .fab {
+            
+            line-height: calc(30px - 1px);
+
+          }
+      
+}
+
+
+
+@media(max-width:390px){
+    .home .home-content{
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:390px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+
+@media(max-width:390px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+@media(max-width:390px){
+    .hr{
+        margin-top: 0%;
+    }
+}
+@media(max-width:390px){
+    .about .title{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        font-family: 'Ubantu', sans-serif;
+    }
+    .about{
+        padding-top: 40px;
+    }
+    .title3{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10%;
+        padding-bottom: 20px;
+       
+    }
+    .timeline{
+        width:90%;
+        margin-left: 5%;
+        background-color:#fff;
+        color:rgb(7, 7, 7);
+        padding:30px 20px;
+        box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+      }
+      .timeline ul li span{
+        font-size:13px;
+        text-align:center;
+      }
+      .timeline ul li .content h3{
+        color:crimson;
+        font-size:13px;
+        padding-top:5px;
+      }
+      .timeline ul li .content p{
+        padding:5px 0px 15px 0px;
+        font-size:13px;
+      }
+      .year{
+        font-size: 13px;
+      }
+    
+    .Skills .card{
+      margin-top: 10px;
+      padding: 0;
+      font-size: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-bottom: 0;
+      background-color:#fff;
+      color:rgb(7, 7, 7);
+      box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+  }
+  .social2{
+    margin-left: 0;
+  }
+  .html{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+   .Skills .title{
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+ .projects .title{
+    font-size: 30px;
+    margin-bottom: 0;
+ }
+
+
+ .blogs .title{
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 0;
+ }
+ #blogs{
+    padding: 0;
+ }
+ .blog-text p{
+    display: none;
+ }
+.blog-text a{
+    font-size: 15px;
+}
+.blog-text span{
+    font-size: 13px;
+}
+.contact .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+    font-size: 15px;
+}
+.contact .contact-content .info .head{
+    
+    font-size: 15px;
+}
+.contact .contact-content .row i{
+    font-size: 15px;
+    color: crimson;
+}
+.contact .contact-content .right .text{
+    font-size: 15px;
+}
+.contact .right form .field input{
+    width: 100%;
+}
+.contact .right form .fields{
+    flex-direction: column;
+}
+.contact .right form .name,
+.contact .right form .email{
+    margin: 0;
+}
+.right form .error-box{
+   width: 150px;
+}
+
+footer .box{
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(255, 254, 254);
+    padding: 20px;
+    margin-bottom: 0%;
+    box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+}
+
+
+}
+
+
+@media(max-width:430px){
+     .iconsocial{
+        padding-top: 19px;
+        left: 50%;
+     }
+}
+
+
+@media(max-width:430px){
+    .home .home-content .text-3{
+        font-size: 10px;
+       
+    }
+}
+
+
+@media(max-width:430px){
+    .iconsocial li a {
+        position: relative;
+        width:40px;
+        height:40px;
+        font-size: 20px;
+        
+      }
+}
+
+@media(max-width:430px){
+    
+        .iconsocial li a .fab {
+            
+            line-height: calc(30px - 1px);
+
+          }
+      
+}
+
+
+
+@media(max-width:430px){
+    .home .home-content{
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:430px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+
+@media(max-width:430px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+@media(max-width:430px){
+    .hr{
+        margin-top: 0%;
+    }
+}
+@media(max-width:430px){
+    .about .title{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        font-family: 'Ubantu', sans-serif;
+    }
+    .about{
+        padding-top: 40px;
+    }
+    .title3{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10%;
+        padding-bottom: 20px;
+       
+    }
+    .timeline{
+        width:90%;
+        margin-left: 5%;
+        background-color:#fff;
+        color:rgb(7, 7, 7);
+        padding:30px 20px;
+        box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+      }
+      .timeline ul li span{
+        font-size:13px;
+        text-align:center;
+      }
+      .timeline ul li .content h3{
+        color:crimson;
+        font-size:13px;
+        padding-top:5px;
+      }
+      .timeline ul li .content p{
+        padding:5px 0px 15px 0px;
+        font-size:13px;
+      }
+      .year{
+        font-size: 13px;
+      }
+    
+    .Skills .card{
+      margin-top: 10px;
+      padding: 0;
+      font-size: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-bottom: 0;
+      background-color:#fff;
+      color:rgb(7, 7, 7);
+      box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+  }
+  .social2{
+    margin-left: 0;
+  }
+  .html{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+   .Skills .title{
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+ .projects .title{
+    font-size: 30px;
+    margin-bottom: 0;
+ }
+
+
+ .blogs .title{
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 0;
+ }
+ #blogs{
+    padding: 0;
+ }
+ .blog-text p{
+    display: none;
+ }
+.blog-text a{
+    font-size: 15px;
+}
+.blog-text span{
+    font-size: 13px;
+}
+.contact .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+    font-size: 15px;
+}
+.contact .contact-content .info .head{
+    
+    font-size: 15px;
+}
+.contact .contact-content .row i{
+    font-size: 15px;
+    color: crimson;
+}
+.contact .contact-content .right .text{
+    font-size: 15px;
+}
+.contact .right form .field input{
+    width: 100%;
+}
+.contact .right form .fields{
+    flex-direction: column;
+}
+.contact .right form .name,
+.contact .right form .email{
+    margin: 0;
+}
+.right form .error-box{
+   width: 150px;
+}
+
+footer .box{
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(255, 254, 254);
+    padding: 20px;
+    margin-bottom: 0%;
+    box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+}
+
+
+
+}
+
+
+
+@media(max-width:500px){
+     .iconsocial{
+        padding-top: 19px;
+        left: 50%;
+     }
+}
+
+
+@media(max-width:500px){
+    .home .home-content .text-3{
+        font-size: 10px;
+       
+    }
+}
+
+
+@media(max-width:500px){
+    .iconsocial li a {
+        position: relative;
+        width:40px;
+        height:40px;
+        font-size: 20px;
+        
+      }
+}
+
+@media(max-width:500px){
+    
+        .iconsocial li a .fab {
+            
+            line-height: calc(30px - 1px);
+
+          }
+      
+}
+
+
+
+@media(max-width:500px){
+    .home .home-content{
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:500px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+
+@media(max-width:500px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .hr{
+        margin-top: 0%;
+    }
+}
+@media(max-width:500px){
+    .about .title{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        font-family: 'Ubantu', sans-serif;
+    }
+    .about{
+        padding-top: 40px;
+    }
+    .title3{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10%;
+        padding-bottom: 20px;
+       
+    }
+    .timeline{
+        width:90%;
+        margin-left: 5%;
+        background-color:#fff;
+        color:rgb(7, 7, 7);
+        padding:30px 20px;
+        box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+      }
+      .timeline ul li span{
+        font-size:13px;
+        text-align:center;
+      }
+      .timeline ul li .content h3{
+        color:crimson;
+        font-size:13px;
+        padding-top:5px;
+      }
+      .timeline ul li .content p{
+        padding:5px 0px 15px 0px;
+        font-size:13px;
+      }
+      .year{
+        font-size: 13px;
+      }
+    
+    .Skills .card{
+      margin-top: 10px;
+      padding: 0;
+      font-size: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-bottom: 0;
+      background-color:#fff;
+      color:rgb(7, 7, 7);
+      box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+  }
+  .social2{
+    margin-left: 0;
+  }
+  .html{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+   .Skills .title{
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+ .projects .title{
+    font-size: 30px;
+    margin-bottom: 0;
+ }
+
+
+ .blogs .title{
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 0;
+ }
+ #blogs{
+    padding: 0;
+ }
+ .blog-text p{
+    display: none;
+ }
+.blog-text a{
+    font-size: 15px;
+}
+.blog-text span{
+    font-size: 13px;
+}
+.contact .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+    font-size: 15px;
+}
+.contact .contact-content .info .head{
+    
+    font-size: 15px;
+}
+.contact .contact-content .row i{
+    font-size: 15px;
+    color: crimson;
+}
+.contact .contact-content .right .text{
+    font-size: 15px;
+}
+.contact .right form .field input{
+    width: 100%;
+}
+.contact .right form .fields{
+    flex-direction: column;
+}
+.contact .right form .name,
+.contact .right form .email{
+    margin: 0;
+}
+.right form .error-box{
+   width: 150px;
+}
+
+footer .box{
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(255, 254, 254);
+    padding: 20px;
+    margin-bottom: 0%;
+    box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+}
+
+
+
+}
+
+
+@media(max-width:600px){
+     .iconsocial{
+        padding-top: 19px;
+        left: 50%;
+     }
+}
+
+
+@media(max-width:600px){
+    .home .home-content .text-3{
+        font-size: 10px;
+       
+    }
+}
+
+
+@media(max-width:600px){
+    .iconsocial li a {
+        position: relative;
+        width:40px;
+        height:40px;
+        font-size: 20px;
+        
+      }
+}
+
+@media(max-width:600px){
+    
+        .iconsocial li a .fab {
+            
+            line-height: calc(30px - 1px);
+
+          }
+      
+}
+
+
+
+@media(max-width:600px){
+    .home .home-content{
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:600px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+
+@media(max-width:600px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    .hr{
+        margin-top: 0%;
+    }
+}
+@media(max-width:600px){
+    .about .title{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        font-family: 'Ubantu', sans-serif;
+    }
+    .about{
+        padding-top: 40px;
+    }
+    .title3{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10%;
+        padding-bottom: 20px;
+       
+    }
+    .timeline{
+        width:90%;
+        margin-left: 5%;
+        background-color:#fff;
+        color:rgb(7, 7, 7);
+        padding:30px 20px;
+        box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+      }
+      .timeline ul li span{
+        font-size:13px;
+        text-align:center;
+      }
+      .timeline ul li .content h3{
+        color:crimson;
+        font-size:13px;
+        padding-top:5px;
+      }
+      .timeline ul li .content p{
+        padding:5px 0px 15px 0px;
+        font-size:13px;
+      }
+      .year{
+        font-size: 13px;
+      }
+    
+    .Skills .card{
+      margin-top: 10px;
+      padding: 0;
+      font-size: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-bottom: 0;
+      background-color:#fff;
+      color:rgb(7, 7, 7);
+      box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+  }
+  .social2{
+    margin-left: 0;
+  }
+  .html{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+   .Skills .title{
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+ .projects .title{
+    font-size: 30px;
+    margin-bottom: 0;
+ }
+
+
+ .blogs .title{
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 0;
+ }
+ #blogs{
+    padding: 0;
+ }
+ .blog-text p{
+    display: none;
+ }
+.blog-text a{
+    font-size: 15px;
+}
+.blog-text span{
+    font-size: 13px;
+}
+.contact .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+    font-size: 15px;
+}
+.contact .contact-content .info .head{
+    
+    font-size: 15px;
+}
+.contact .contact-content .row i{
+    font-size: 15px;
+    color: crimson;
+}
+.contact .contact-content .right .text{
+    font-size: 15px;
+}
+.contact .right form .field input{
+    width: 100%;
+}
+.contact .right form .fields{
+    flex-direction: column;
+}
+.contact .right form .name,
+.contact .right form .email{
+    margin: 0;
+}
+.right form .error-box{
+   width: 150px;
+}
+
+footer .box{
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(255, 254, 254);
+    padding: 20px;
+    margin-bottom: 0%;
+    box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+}
+
+
+
+}
+
+
+
+
+@media(max-width:700px){
+     .iconsocial{
+        padding-top: 19px;
+        left: 50%;
+     }
+}
+
+
+@media(max-width:700px){
+    .home .home-content .text-3{
+        font-size: 10px;
+       
+    }
+}
+
+
+@media(max-width:700px){
+    .iconsocial li a {
+        position: relative;
+        width:40px;
+        height:40px;
+        font-size: 20px;
+        
+      }
+}
+
+@media(max-width:700px){
+    
+        .iconsocial li a .fab {
+            
+            line-height: calc(30px - 1px);
+
+          }
+      
+}
+
+
+
+@media(max-width:700px){
+    .home .home-content{
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:700px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+
+@media(max-width:700px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+@media(max-width:700px){
+    .hr{
+        margin-top: 0%;
+    }
+}
+@media(max-width:700px){
+    .about .title{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        font-family: 'Ubantu', sans-serif;
+    }
+    .about{
+        padding-top: 40px;
+    }
+    .title3{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10%;
+        padding-bottom: 20px;
+       
+    }
+    .timeline{
+        width:90%;
+        margin-left: 5%;
+        background-color:#fff;
+        color:rgb(7, 7, 7);
+        padding:30px 20px;
+        box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+      }
+      .timeline ul li span{
+        font-size:13px;
+        text-align:center;
+      }
+      .timeline ul li .content h3{
+        color:crimson;
+        font-size:13px;
+        padding-top:5px;
+      }
+      .timeline ul li .content p{
+        padding:5px 0px 15px 0px;
+        font-size:13px;
+      }
+      .year{
+        font-size: 13px;
+      }
+    
+    .Skills .card{
+      margin-top: 10px;
+      padding: 0;
+      font-size: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-bottom: 0;
+      background-color:#fff;
+      color:rgb(7, 7, 7);
+      box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+  }
+  .social2{
+    margin-left: 0;
+  }
+  .html{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+   .Skills .title{
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+ .projects .title{
+    font-size: 30px;
+    margin-bottom: 0;
+ }
+
+
+ .blogs .title{
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 0;
+ }
+ #blogs{
+    padding: 0;
+ }
+ .blog-text p{
+    display: none;
+ }
+.blog-text a{
+    font-size: 15px;
+}
+.blog-text span{
+    font-size: 13px;
+}
+.contact .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+    font-size: 15px;
+}
+.contact .contact-content .info .head{
+    
+    font-size: 15px;
+}
+.contact .contact-content .row i{
+    font-size: 15px;
+    color: crimson;
+}
+.contact .contact-content .right .text{
+    font-size: 15px;
+}
+.contact .right form .field input{
+    width: 100%;
+}
+.contact .right form .fields{
+    flex-direction: column;
+}
+.contact .right form .name,
+.contact .right form .email{
+    margin: 0;
+}
+.right form .error-box{
+   width: 150px;
+}
+
+footer .box{
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(255, 254, 254);
+    padding: 20px;
+    margin-bottom: 0%;
+    box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+}
+
+}
+
+
+@media(max-width:800px){
+     .iconsocial{
+        padding-top: 19px;
+        left: 50%;
+     }
+}
+
+
+@media(max-width:800px){
+    .home .home-content .text-3{
+        font-size: 10px;
+       
+    }
+}
+
+
+@media(max-width:800px){
+    .iconsocial li a {
+        position: relative;
+        width:40px;
+        height:40px;
+        font-size: 20px;
+        
+      }
+}
+
+@media(max-width:800px){
+    
+        .iconsocial li a .fab {
+            
+            line-height: calc(30px - 1px);
+
+          }
+      
+}
+
+
+
+@media(max-width:800px){
+    .home .home-content{
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:800px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+
+@media(max-width:800px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+@media(max-width:800px){
+    .hr{
+        margin-top: 0%;
+    }
+}
+@media(max-width:800px){
+    .about .title{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        font-family: 'Ubantu', sans-serif;
+    }
+    .about{
+        padding-top: 40px;
+    }
+    .title3{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10%;
+        padding-bottom: 20px;
+       
+    }
+    .timeline{
+        width:90%;
+        margin-left: 5%;
+        background-color:#fff;
+        color:rgb(7, 7, 7);
+        padding:30px 20px;
+        box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+      }
+      .timeline ul li span{
+        font-size:13px;
+        text-align:center;
+      }
+      .timeline ul li .content h3{
+        color:crimson;
+        font-size:13px;
+        padding-top:5px;
+      }
+      .timeline ul li .content p{
+        padding:5px 0px 15px 0px;
+        font-size:13px;
+      }
+      .year{
+        font-size: 13px;
+      }
+    
+    .Skills .card{
+      margin-top: 10px;
+      padding: 0;
+      font-size: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      margin-bottom: 0;
+      background-color:#fff;
+      color:rgb(7, 7, 7);
+      box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+  }
+  .social2{
+    margin-left: 0;
+  }
+  .html{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+   .Skills .title{
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+ .projects .title{
+    font-size: 30px;
+    margin-bottom: 0;
+ }
+
+
+ .blogs .title{
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 0;
+ }
+ #blogs{
+    padding: 0;
+ }
+ .blog-text p{
+    display: none;
+ }
+.blog-text a{
+    font-size: 15px;
+}
+.blog-text span{
+    font-size: 13px;
+}
+.contact .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+    font-size: 15px;
+}
+.contact .contact-content .info .head{
+    
+    font-size: 15px;
+}
+.contact .contact-content .row i{
+    font-size: 15px;
+    color: crimson;
+}
+.contact .contact-content .right .text{
+    font-size: 15px;
+}
+.contact .right form .field input{
+    width: 100%;
+}
+.contact .right form .fields{
+    flex-direction: column;
+}
+.contact .right form .name,
+.contact .right form .email{
+    margin: 0;
+}
+.right form .error-box{
+   width: 150px;
+}
+
+footer .box{
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(255, 254, 254);
+    padding: 20px;
+    margin-bottom: 0%;
+    box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+}
+
+
+
+}
+
+@media(max-width:1000px){
+     .iconsocial{
+        padding-top: 19px;
+        left: 50%;
+     }
+}
+
+
+@media(max-width:1000px){
+    .home .home-content .text-3{
+        font-size: 10px;
+       
+    }
+}
+
+
+@media(max-width:1000px){
+    .iconsocial li a {
+        position: relative;
+        width:40px;
+        height:40px;
+        font-size: 20px;
+        
+      }
+}
+
+@media(max-width:1000px){
+    
+        .iconsocial li a .fab {
+            
+            line-height: calc(30px - 1px);
+
+          }
+      
+}
+
+
+
+@media(max-width:1000px){
+    .home .home-content{
+        padding-top: 20px;
+    }
+}
+
+@media(max-width:1000px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+
+@media(max-width:1000px){
+    .about .about-content .column{
+        width: 100%;
+    }
+}
+@media(max-width:1000px){
+    .hr{
+        margin-top: 0%;
+    }
+}
+@media(max-width:1000px){
+    .about .title{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        font-family: 'Ubantu', sans-serif;
+    }
+    .about{
+        padding-top: 40px;
+    }
+    .title3{
+        position: relative;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 10%;
+        padding-bottom: 20px;
+       
+    }
+    .timeline{
+        width:90%;
+        margin-left: 5%;
+        background-color:#fff;
+        color:rgb(7, 7, 7);
+        padding:30px 20px;
+        box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+      }
+      .timeline ul li span{
+        font-size:13px;
+        text-align:center;
+      }
+      .timeline ul li .content h3{
+        color:crimson;
+        font-size:13px;
+        padding-top:5px;
+      }
+      .timeline ul li .content p{
+        padding:5px 0px 15px 0px;
+        font-size:13px;
+      }
+      .year{
+        font-size: 13px;
+      }
+ 
+  .social2{
+    margin-left: 0;
+  }
+  .html{
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+   .Skills .title{
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+ .projects .title{
+    font-size: 30px;
+    margin-bottom: 0;
+ }
+
+
+ .blogs .title{
+    font-size: 30px;
+    margin-bottom: 0;
+    padding: 0;
+ }
+ #blogs{
+    padding: 0;
+ }
+ .blog-text p{
+    display: none;
+ }
+.blog-text a{
+    font-size: 15px;
+}
+.blog-text span{
+    font-size: 13px;
+}
+.contact .title{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+    font-size: 15px;
+}
+.contact .contact-content .info .head{
+    
+    font-size: 15px;
+}
+.contact .contact-content .row i{
+    font-size: 15px;
+    color: crimson;
+}
+.contact .contact-content .right .text{
+    font-size: 15px;
+}
+.contact .right form .field input{
+    width: 100%;
+}
+.contact .right form .fields{
+    flex-direction: column;
+}
+.contact .right form .name,
+.contact .right form .email{
+    margin: 0;
+}
+.right form .error-box{
+   width: 150px;
+}
+
+footer .box{
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid rgb(255, 254, 254);
+    padding: 20px;
+    margin-bottom: 0%;
+    box-shadow:0px 0px 30px rgba(140, 7, 7, 0.5);
+}
+
+
+}
+
+
+
+@media (max-width: 340px){
+    .main1 .main1-content .right .text-3{
+        font-size: 15px;
+        text-align: center;
+        
+    }
+
+}
+
+@media (max-width: 1104px){
+    .main1 .main1-content .right .text-1{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 947px){
+    
+    .main1 .main1-content .column{
+        width: 100%;
+    }
+    .main1 .main1-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .main1 .main1-content .right{
+        flex: 100%;
+    }
+}
+
+@media (max-width: 1104px) {
+
+    .main1 .main1-content .left img{
+        height: 350px;
+        width: 250px;
+    }
+}
+
+
+
+
+
